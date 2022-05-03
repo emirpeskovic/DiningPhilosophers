@@ -1,0 +1,3 @@
+﻿using DiningPhilosophers;
+
+PhilosopherProblem.Run();
