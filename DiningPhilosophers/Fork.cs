@@ -9,18 +9,14 @@ namespace DiningPhilosophers
     // Our fork class to keep track of forks
     public class Fork
     {
-        // Id of the fork
-        public int Id { get; set; }
-
         // Whether it's taken or not
-        public bool Taken { get; set; }
+        private bool Taken;
 
         // Who it's taken by (id of philosopher)
-        public int TakenBy { get; set; }
+        private int TakenBy;
 
-        public Fork(int id)
+        public Fork()
         {
-            Id = id;
             Taken = false;
         }
 

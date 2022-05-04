@@ -3,7 +3,7 @@
 var forks = new Fork[5];
 for (int i = 0; i < 5; i++)
 {
-    forks[i] = new Fork(i);
+    forks[i] = new Fork();
 }
 
 var philosophers = new Philosopher[5];

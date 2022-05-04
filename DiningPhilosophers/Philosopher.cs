@@ -10,11 +10,11 @@ namespace DiningPhilosophers
     public class Philosopher
     {
         // Id of the current Philosopher
-        public int Id { get; set; }
+        private int Id;
 
         // Readonly reference to the forks
-        public readonly Fork LeftFork;
-        public readonly Fork RightFork;
+        private readonly Fork LeftFork;
+        private readonly Fork RightFork;
 
         public Philosopher(int id, Fork leftFork, Fork rightFork)
         {
@@ -48,8 +48,6 @@ namespace DiningPhilosophers
                     Console.WriteLine("Philosopher {0} is thinking", Id);
                     Thread.Sleep(1000);
                 }
-
-                Thread.Sleep(100 / 15);
             }
         }
     }
